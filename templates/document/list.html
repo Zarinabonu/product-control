@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        let
+    </script>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+<header>
+<h1>Документы</h1>
+</header>
+<div class="body">
+    <table class="table">
+        <thead class="thead-light">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Код</th>
+            <th scope="col">Парол</th>
+            <th scope="col">Адрес</th>
+            <th scope="col">Адрес</th>
+            <th scope="col">Адрес</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        {% for doc in docs %}
+            <tr>
+                <td>
+                    <a href="#">{{ doc.organization_id }}</a>
+                </td>
+                <td>{{ doc.date }}</td>
+                <td>{{ doc.number }}</td>
+                <td>{{ doc.from_whom.name }}</td>
+                <td>{{ doc.to_whom.name }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <script>
+        var tables = document.getElementsByTagName('tbody');
+        var table = tables[tables.length - 1];
+        var rows = table.rows;
+        for (var i = 0, td; i < rows.length; i++) {
+            td = document.createElement('td');
+            td.appendChild(document.createTextNode(i + 1));
+            rows[i].insertBefore(td, rows[i].firstChild);
+        }
+    </script>
+</div>
+</body>
+</html>

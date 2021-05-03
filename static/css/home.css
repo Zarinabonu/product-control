@@ -1,0 +1,245 @@
+
+#home {
+    width: 100%;
+    position: relative;
+    background: #e5ebf7 ;
+    background-size: cover;
+
+}
+
+#header {
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#topbar {
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.social-links {
+    text-align: right;
+}
+
+.social-links a {
+    color: #535074;
+    padding: 4px 12px;
+    display: inline-block;
+    line-height: 1px;
+}
+
+.float-left {
+    float: left !important;
+}
+
+#header .logo div {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#header .logo div a, #header .logo div a:hover {
+    color: #000001;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#header .logo img {
+    padding: 0;
+    margin: 7px 0;
+    max-height: 40px;
+}
+
+.main-nav, .main-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav > ul > li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+}
+
+.main-nav a {
+    display: block;
+    position: relative;
+    color: #000001;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.language {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: calc(100% - 30px);
+    z-index: 99;
+    padding: 10px 0;
+    background: #f6f6f7;
+    box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+    transition: ease all 0.3s;
+}
+
+.language{
+    opacity: 0;
+}
+
+.active-language:hover ~ .language{
+    opacity: 1;
+    margin-top: 32px;
+}
+
+.main-nav .drop-down li {
+    min-width: 180px;
+    position: relative;
+}
+
+.main-nav .drop-down ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    color: #065e77;
+}
+
+.main-nav .drop-down > a:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    padding-left: 10px;
+}
+
+.online-factor {
+    padding-left: 40px;
+}
+
+.online-factor h2 {
+    color: #000001;
+    /* margin-bottom: 40px; */
+    font-size: 38px;
+    margin: 0px;
+    font-weight: 700;
+}
+
+.online-factor h2 span {
+    color: #00aeff;
+}
+
+.online-factor p {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.btn-primary {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #00aeff;
+    color: #fff;
+    border: none;
+}
+
+.contact {
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+    border-radius: 40px;
+    padding-left: 15px;
+}
+
+.phone-number {
+    float: right;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.contact .gif {
+    float: right;
+    width: 80px;
+    height: 80px;
+}
+
+.contact .number {
+    font-size: 20px;
+    line-height: 1;
+    color: black;
+    font-weight: bold;
+    padding-right: 10px;
+    visibility: hidden;
+}
+
+.form-group{
+    display: flex;
+}
+
+.form-group label{
+    width: 30%;
+}
+
+.form-group input{
+    width: 70%;
+}
+
+.information{
+    padding-top: 20px;
+}
+
+.information button{
+    float: right;
+}
+
+.scrollto h2{
+        color: #000001;
+    /* margin-bottom: 40px; */
+    font-size: 38px;
+    margin: 0px;
+    font-weight: 700;
+}
+
+.scrollto h2 span{
+        color: #00aeff;
+}
+
+.contact.active{
+  background-color: #ff00662e;
+    /*transition: visibility 0s linear 300ms, opacity 30ms;*/
+}
+.contact.active .number{
+    visibility: visible;
+    /*transition: visibility 0s linear 300ms, opacity 30ms;*/
+}
+
+/*.numbers{*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.active-call:hover ~ #c{*/
+/*    background-color: #ff00662e;*/
+/*}*/
+
+/*.active-call:hover ~ .numbers{*/
+/*    opacity: 1;*/
+/*}*/

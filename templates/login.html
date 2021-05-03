@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+<div class="main-page">
+    <div class="text-center">
+        <div class="enter-block">
+            <a class="logo" href="#">
+                <img src="" alt="">
+            </a>
+            <div class="typical-forms enter-form">
+                <form class="pb-2" method="POST">
+                    {% csrf_token %}
+                    <p class="title">Заказать звонок</p>
+                    <div class="form-group">
+                        <label for="username">Имя пользователя
+                        </label>
+                        <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
+                               placeholder="" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" class="form-control" id="password" placeholder=""
+                               name="password">
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <button type="submit" class="btn light">Войти</button>
+                        </div>
+                    </div>
+                </form>
+                    <a class="small" href="#">
+                    <p>Можете свободно выбрать оператора ЭСФ</p>
+                </a>
+                <a class="small" href="#">
+                    <p>EHF operatorini erkin tanlashingiz mumkin</p>
+                </a>
+                <div class="version align-center mt-2">
+                    Version 2.5.1#00
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var onloadCallback = function () {
+            grecaptcha.render('html_element', {
+                'sitekey': 'your_site_key'
+            });
+        };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+            async defer>
+    </script>
+</div>
+</body>
+</html>
